@@ -11,6 +11,7 @@ const AddService = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, price, imgUrl, description);
+    e.target.reset();
     submitMenu();
   };
 
@@ -39,6 +40,10 @@ const AddService = () => {
       },
     })
       .then((response) => {
+        setName("");
+        setPrice(0);
+        setImgUrl("");
+        setDescription("");
         console.log(response.data);
       })
       .catch((e) => {
