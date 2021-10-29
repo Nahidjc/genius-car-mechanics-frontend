@@ -16,21 +16,6 @@ const AddService = () => {
   };
 
   const submitMenu = () => {
-    const options = {
-      url: `${baseURL}/services/`,
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json;charset=UTF-8",
-      },
-      data: {
-        name: "nahid",
-        description: "bxffffffff",
-        price: 300,
-        imgUrl: "https://i.ibb.co/dGDkr4v/1.jpg",
-      },
-    };
-
     Axios({
       url: `${baseURL}/services/`,
       method: "POST",
