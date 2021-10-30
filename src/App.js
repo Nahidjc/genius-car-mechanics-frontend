@@ -8,7 +8,7 @@ import Header from "./Pages/Shared/Header/Header";
 import AuthProvider from "./contexts/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import AddService from "./Pages/Home/Service/AddService";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
